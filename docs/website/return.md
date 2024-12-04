@@ -3,13 +3,14 @@ slug: /return
 hide_table_of_contents: true
 ---
 
-# Custom Reporters
-
-TurboWarp now supports custom reporters which lets you use any custom block in your project as a reporter, like the addition block built into Scratch. This is a pretty standard feature in text-based programming languages, but it can be hard to understand initially.
+### Custom Reporters - Edited by wiktorlaskowski
 
 :::info
 Projects that use this feature cannot be uploaded to the Scratch website.
 :::
+
+TurboWarp now supports custom reporters which lets you use any custom block in your project as a reporter, like the addition block built into Scratch. This is a pretty standard feature in text-based programming languages, but it can be hard to understand initially.
+
 
 Custom reporters technically don't let you do anything you couldn't do before -- they just make it *much* easier to read and write. For example, if your project needs to repeat text a lot, you might make a script like this:
 
@@ -17,7 +18,7 @@ Custom reporters technically don't let you do anything you couldn't do before --
 
 <img src={require('./assets/repeat-old.png').default} style={{height: '429px'}} />
 
-This works, but it's pretty ugly, and will only get worse as you use the block more. Using the return block to create a custom reporter, this becomes much simpler:
+This works, but it's pretty ugly, and will only get worse as you use the block more for example using it 2 times in a check. Using the return block to create a custom reporter, this becomes much simpler:
 
 <img src={require('./assets/repeat-return.png').default} style={{height: '410px'}} />
 
@@ -46,7 +47,7 @@ Using recursion, you can rewrite the repeat block to use no variables at all:
 Just like custom reporters themselves, recursion doesn't let you do anything that wasn't technically possible already, but it can make it much easier to understand. (Anything written with loops can be rewritten with recursion. Anything written with recursion can be rewritten with loops. Sometimes one solution is easier than the other.)
 
 :::info
-When using the compiler, beware of [stack overflow errors](https://en.wikipedia.org/wiki/Stack_overflow) from too much recursion. Recursing more than a few thousand calls deep typically will throw errors.
+When using the compiler, beware of [stack overflow errors](https://en.wikipedia.org/wiki/Stack_overflow) from too much recursion. Recursing more than a few thousand calls deep typically will throw errors 1000 or more repeats deep.
 :::
 
 ## Differences between compiler and interpreter {#interpreter-compiler}
@@ -62,3 +63,4 @@ To improve performance, the compiler has a feature known as [short circuiting](h
 <img src={require('./assets/short-circuit.png').default} style={{height: '375px'}} />
 
 If you have several custom reporters nested deeply inside other blocks, the order they run in can differ between the compiler and interpreter.
+Modified by: wiktorlaskowski
